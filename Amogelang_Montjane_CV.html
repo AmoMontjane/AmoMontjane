@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amogelang Montjane - CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            display: flex;
+            overflow: hidden;
+        }
+
+        /* Sidebar for contact info */
+        .sidebar {
+            background-color: #1a3d7c; /* navy blue */
+            color: #fff;
+            width: 250px;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+        .sidebar h2 {
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 15px;
+            border-bottom: 1px solid rgba(255,255,255,0.5);
+            padding-bottom: 5px;
+        }
+        .sidebar .contact div {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        .sidebar .contact a {
+            color: #a8c6ff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .sidebar .contact a:hover {
+            color: #ffe680; /* Hover color */
+        }
+
+        /* Main content */
+        .main {
+            flex-grow: 1;
+            padding: 30px 40px;
+        }
+
+        /* Header with photo */
+        .main-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            background-color: #1a3d7c;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+        }
+        .main-header h1 {
+            margin: 0;
+            font-size: 34px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .profile-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #fff;
+        }
+
+        /* Section headings */
+        h2 {
+            background-color: #1a3d7c;
+            color: #fff;
+            padding: 6px 10px;
+            border-radius: 6px;
+            margin-top: 25px;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        h2 i {
+            color: #a8c6ff;
+        }
+
+        p {
+            margin: 6px 0;
+            line-height: 1.6;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ccc;
+            margin: 15px 0;
+        }
+
+        ul.skills, ul.projects, ul.certifications {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul.skills li, ul.projects li, ul.certifications li {
+            margin: 8px 0;
+            padding-left: 18px;
+            position: relative;
+        }
+        ul.skills li::before, ul.projects li::before, ul.certifications li::before {
+            content: "\2022";
+            color: #1a3d7c;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        /* Dates aligned right */
+        .date-right {
+            float: right;
+            font-style: italic;
+            color: #666;
+        }
+
+        /* Certification badges */
+        .cert-badge {
+            display: inline-block;
+            background-color: #a8c6ff;
+            color: #1a3d7c;
+            padding: 4px 8px;
+            border-radius: 6px;
+            margin-right: 6px;
+            font-weight: bold;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Contact</h2>
+            <div class="contact"><i class="fas fa-phone"></i> +27 82 640 9269</div>
+            <div class="contact"><i class="fas fa-envelope"></i> <a href="mailto:A.montjane54@gmail.com">A.montjane54@gmail.com</a></div>
+            <div class="contact"><i class="fab fa-github"></i> <a href="https://github.com/AmoMontjane" target="_blank">github.com/AmoMontjane</a></div>
+            <div class="contact"><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/amogelang-montjane-4a0545395" target="_blank">linkedin.com/in/amogelang-montjane-4a0545395</a></div>
+        </div>
+
+        <!-- Main content -->
+        <div class="main">
+            <!-- Header with photo -->
+            <div class="main-header">
+                <img src="https://raw.githubusercontent.com/AmoMontjane/AmoMontjane/main/amo..jpg" 
+                     alt="Amogelang Montjane" class="profile-photo">
+                <h1>Amogelang Montjane</h1>
+            </div>
+
+            <!-- Profile -->
+            <h2><i class="fas fa-user"></i> Profile</h2>
+            <p>
+                I am a final-year BSc Information Technology student at North West University, passionate about creating modern IT solutions. Experienced in networking, system design, web development, and IT support. I enjoy collaborating on projects, solving problems, and bringing creative ideas to life. Committed to continuous learning and contributing to innovative IT solutions.
+            </p>
+            <hr>
+
+            <!-- Education -->
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <p>North West University – BSc Information Technology <span class="date-right">Expected 2025</span></p>
+            <p>Segopotje Senior Secondary School – National Senior Certificate <span class="date-right">2017 - 2021</span></p>
+            <hr>
+
+            <!-- Skills -->
+            <h2><i class="fas fa-lightbulb"></i> Skills</h2>
+            <ul class="skills">
+                <li><strong>Technical Skills:</strong> Networking & Packet Tracer, System Design, IT Support, Web Development (HTML, CSS, JavaScript, React.js), Programming (C#, C++, Java, Python), Databases & Tools (SQL, MongoDB, Oracle, Power BI), Tools & Platforms (Visual Studio, VS Code, GitHub, Figma, .NET)</li>
+                <li><strong>Soft Skills:</strong> Teamwork & Collaboration, Customer Service, Multitasking & Time Management</li>
+            </ul>
+            <hr>
+
+            <!-- Projects -->
+            <h2><i class="fas fa-briefcase"></i> Projects</h2>
+            <ul class="projects">
+                <li>Packet Tracer Network Simulation <span class="date-right">2024</span>: Designed network topologies, implemented routing, switching, and troubleshooting exercises.</li>
+                <li>Data Analysis / System Design Project <span class="date-right">2023</span>: Collected and analyzed datasets to design efficient workflow systems.</li>
+            </ul>
+            <hr>
+
+            <!-- Certifications -->
+            <h2><i class="fas fa-certificate"></i> Certifications</h2>
+            <ul class="certifications">
+                <li><span class="cert-badge">Cisco Networking</span> - <a href="https://1drv.ms/b/s!AqnKftI0eplzgkV80bwfYM1QMd4e?e=rfkrTf" target="_blank">View Certificate</a></li>
+                <li><span class="cert-badge">Cisco Packet Tracer</span> - <a href="https://1drv.ms/b/s!AqnKftI0eplzgkTHQjIcnGs0EdKE?e=eb8bWq" target="_blank">View Certificate</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
